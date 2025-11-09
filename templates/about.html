@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - DeepSeek-OCR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🔍 DeepSeek-OCR</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/demo">Demo</a></li>
+                <li><a href="/about" class="active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="container">
+            <h1 class="page-title">About DeepSeek-OCR</h1>
+            
+            <div class="about-content">
+                <div class="about-card">
+                    <h2>🎯 Project Overview</h2>
+                    <p>DeepSeek-OCR is a state-of-the-art optical character recognition system that leverages advanced deep learning models to extract text from images and documents with exceptional accuracy.</p>
+                    <p>This project demonstrates the power of modern AI in document understanding, combining vision encoders with large language models to achieve superior OCR performance.</p>
+                </div>
+
+                <div class="about-card">
+                    <h2>🔬 Technology Stack</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h4>Deep Learning Framework</h4>
+                            <p>PyTorch 2.6.0 with CUDA support for GPU acceleration</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Model Architecture</h4>
+                            <p>Transformer-based vision-language model with flash attention</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Web Framework</h4>
+                            <p>Flask for lightweight and efficient web serving</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Model Provider</h4>
+                            <p>Hugging Face Transformers library</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2>✨ Key Features</h2>
+                    <ul class="features-list">
+                        <li><strong>Multi-Resolution Support:</strong> Tiny (512×512), Small (640×640), Base (1024×1024), Large (1280×1280), and Dynamic (Gundam mode)</li>
+                        <li><strong>Multiple OCR Modes:</strong> Document conversion, free OCR, detailed descriptions, and figure parsing</li>
+                        <li><strong>Layout Preservation:</strong> Maintains document structure including tables, headings, and formatting</li>
+                        <li><strong>High Accuracy:</strong> State-of-the-art performance on OCR benchmarks</li>
+                        <li><strong>GPU Acceleration:</strong> Optimized for NVIDIA GPUs with CUDA support</li>
+                        <li><strong>Flexible Output:</strong> Markdown, plain text, or detailed descriptions</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2>📊 Supported Modes</h2>
+                    <div class="modes-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mode</th>
+                                    <th>Resolution</th>
+                                    <th>Vision Tokens</th>
+                                    <th>Use Case</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiny</td>
+                                    <td>512×512</td>
+                                    <td>64</td>
+                                    <td>Quick processing, simple text</td>
+                                </tr>
+                                <tr>
+                                    <td>Small</td>
+                                    <td>640×640</td>
+                                    <td>100</td>
+                                    <td>Standard documents</td>
+                                </tr>
+                                <tr>
+                                    <td>Base</td>
+                                    <td>1024×1024</td>
+                                    <td>256</td>
+                                    <td>High-quality documents</td>
+                                </tr>
+                                <tr>
+                                    <td>Large</td>
+                                    <td>1280×1280</td>
+                                    <td>400</td>
+                                    <td>Complex layouts</td>
+                                </tr>
+                                <tr>
+                                    <td>Gundam</td>
+                                    <td>Dynamic</td>
+                                    <td>Variable</td>
+                                    <td>Multi-page documents</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2>🎓 Academic Context</h2>
+                    <p>This project is based on the research paper:</p>
+                    <blockquote>
+                        <strong>"DeepSeek-OCR: Contexts Optical Compression"</strong><br>
+                        Wei, Haoran and Sun, Yaofeng and Li, Yukun<br>
+                        arXiv preprint arXiv:2510.18234, 2025
+                    </blockquote>
+                    <p>The model explores the role of vision encoders from an LLM-centric viewpoint, investigating visual-text compression boundaries.</p>
+                </div>
+
+                <div class="about-card">
+                    <h2>🙏 Acknowledgements</h2>
+                    <p>This project builds upon and acknowledges the following excellent works:</p>
+                    <ul>
+                        <li><strong>Vary</strong> - Vision-language model architecture</li>
+                        <li><strong>GOT-OCR2.0</strong> - OCR methodology</li>
+                        <li><strong>MinerU</strong> - Document understanding</li>
+                        <li><strong>PaddleOCR</strong> - OCR techniques</li>
+                        <li><strong>OneChart</strong> - Chart recognition</li>
+                        <li><strong>Slow Perception</strong> - Visual perception research</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2>📚 Resources</h2>
+                    <div class="resources-links">
+                        <a href="https://github.com/deepseek-ai/DeepSeek-OCR" target="_blank" class="resource-link">
+                            <span>📦</span> GitHub Repository
+                        </a>
+                        <a href="https://huggingface.co/deepseek-ai/DeepSeek-OCR" target="_blank" class="resource-link">
+                            <span>🤗</span> Hugging Face Model
+                        </a>
+                        <a href="https://arxiv.org/abs/2510.18234" target="_blank" class="resource-link">
+                            <span>📄</span> Research Paper
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <h2>⚙️ System Requirements</h2>
+                    <ul>
+                        <li><strong>Python:</strong> 3.12 or higher</li>
+                        <li><strong>CUDA:</strong> 11.8 or higher (for GPU acceleration)</li>
+                        <li><strong>RAM:</strong> Minimum 16GB (32GB recommended)</li>
+                        <li><strong>GPU:</strong> NVIDIA GPU with 8GB+ VRAM (optional but recommended)</li>
+                        <li><strong>Storage:</strong> 10GB+ for model weights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DeepSeek-OCR Project | Academic Demonstration</p>
+            <p>Powered by DeepSeek AI | <a href="https://github.com/deepseek-ai/DeepSeek-OCR" target="_blank">GitHub Repository</a></p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
