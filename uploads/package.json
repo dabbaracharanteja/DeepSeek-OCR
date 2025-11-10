@@ -1,0 +1,11 @@
+{
+  "name": "smart-learning-path-full",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"vercel dev\""
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  }
+}
